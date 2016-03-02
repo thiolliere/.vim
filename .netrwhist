@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/media/guillaumethiolliere/stock/lost+found'
+let g:netrw_dirhist_2='/home/thiolliere/love/help/soundposition'
+let g:netrw_dirhist_3='/home/thiolliere/love/help'
+let g:netrw_dirhist_4='/home/thiolliere/Developpement/Valdmor/src'
