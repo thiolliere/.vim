@@ -17,6 +17,7 @@ set incsearch
 set nocompatible
 set hidden
 set history=100
+set mouse=a
 
 autocmd BufWritePre * :%s/\s\+$//e "remove white space on save
 
