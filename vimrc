@@ -41,4 +41,3 @@ set relativenumber
 " autocmd FileType text setlocal tw=60
 " autocmd FileType text setlocal fo=cqt
 
-
