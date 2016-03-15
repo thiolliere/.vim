@@ -41,3 +41,6 @@ set relativenumber
 " autocmd FileType text setlocal tw=60
 " autocmd FileType text setlocal fo=cqt
 
+set hidden
+let g:racer_cmd = "/home/thiolliere/.cargo/bin/racer"
+let $RUST_SRC_PATH="/home/thiolliere/rustc-1.7.0/src/"
