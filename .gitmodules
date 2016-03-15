@@ -33,4 +33,4 @@
 	url = https://github.com/tpope/vim-markdown.git
 [submodule "bundle/vim-racer"]
 	path = bundle/vim-racer
-	url = https://thiolliere@github.com/racer-rust/vim-racer
+	url = https://github.com/racer-rust/vim-racer.git
