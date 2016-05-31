@@ -44,3 +44,5 @@ set relativenumber
 "rust racer autocompletion"
 let g:racer_cmd = "/home/thiolliere/.cargo/bin/racer"
 let $RUST_SRC_PATH="/home/thiolliere/rustc-1.7.0/src/"
+
+let g:PreserveNoEOL = 1
