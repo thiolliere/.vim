@@ -4,7 +4,7 @@ filetype indent on
 filetype on       " enable file type detection
 syntax on         " syntax highlighting
 
-colorscheme peachpuff
+colorscheme darkblue
 
 set number        " line number
 set smartindent   " smart code indentation
