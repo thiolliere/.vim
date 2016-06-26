@@ -4,8 +4,6 @@ filetype indent on
 filetype on       " enable file type detection
 syntax on         " syntax highlighting
 
-colorscheme darkblue
-
 set number        " line number
 set smartindent   " smart code indentation
 set smarttab      " smart tabs
@@ -18,12 +16,15 @@ set nocompatible
 set hidden
 set history=100
 set mouse=a
+set t_Co=8
 
 autocmd BufWritePre * :%s/\s\+$//e "remove white space on save
 
 " Pathogen
 execute pathogen#infect()
 call pathogen#helptags() " generate helptags for everything in 'runtimepath'
+
+colorscheme darkblue
 
 nnoremap <silent> <F9> :NERDTree<CR>
 map <leader>s :source ~/.vimrc<CR>
