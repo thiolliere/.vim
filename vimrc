@@ -17,8 +17,10 @@ set hidden
 set history=100
 set mouse=a
 set t_Co=8
+set listchars=tab:>-,trail:▒,nbsp:␣
+set list
 
-autocmd BufWritePre * :%s/\s\+$//e "remove white space on save
+" autocmd BufWritePre * :%s/\s\+$//e "remove white space on save
 
 " Pathogen
 execute pathogen#infect()
@@ -42,7 +44,7 @@ set relativenumber
 " autocmd FileType text setlocal tw=60
 " autocmd FileType text setlocal fo=cqt
 
-"rust racer autocompletion"
+" rust racer autocompletion
 let g:racer_cmd = "/home/thiolliere/.cargo/bin/racer"
 let $RUST_SRC_PATH="/home/thiolliere/.multirust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/"
 
