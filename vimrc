@@ -17,8 +17,11 @@ set hidden
 set history=100
 set mouse=a
 set t_Co=8
-set listchars=tab:>-,trail:▒,nbsp:␣
+set listchars=tab:>-,nbsp:␣
 set list
+
+autocmd InsertEnter * set listchars-=trail:▒
+autocmd InsertLeave * set listchars+=trail:▒
 
 " autocmd BufWritePre * :%s/\s\+$//e "remove white space on save
 
@@ -27,6 +30,7 @@ execute pathogen#infect()
 call pathogen#helptags() " generate helptags for everything in 'runtimepath'
 
 colorscheme darkblue
+hi ColorColumn ctermbg=yellow
 
 nnoremap <silent> <F9> :NERDTree<CR>
 map <leader>s :source ~/.vimrc<CR>
