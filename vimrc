@@ -19,6 +19,8 @@ set mouse=a
 set t_Co=8
 set listchars=tab:>-,nbsp:␣
 set list
+set display=truncate
+set showcmd
 
 autocmd InsertEnter * set listchars-=trail:▒
 autocmd InsertLeave * set listchars+=trail:▒
@@ -32,8 +34,7 @@ call pathogen#helptags() " generate helptags for everything in 'runtimepath'
 colorscheme darkblue
 hi ColorColumn ctermbg=yellow
 
-nnoremap <silent> <F9> :NERDTree<CR>
-map <leader>s :source ~/.vimrc<CR>
+nnoremap <silent> <F9> :NERDTee<CR>
 
 set undofile                " Save undo's after file closes
 set undodir=$HOME/.vim/undo " where to save undo histories
@@ -51,4 +52,3 @@ set relativenumber
 " rust racer autocompletion
 let g:racer_cmd = "/home/thiolliere/.cargo/bin/racer"
 let $RUST_SRC_PATH="/home/thiolliere/.multirust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/"
-
