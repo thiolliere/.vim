@@ -43,6 +43,9 @@ set undoreload=10000        " number of lines to save for undo
 
 set relativenumber
 
+autocmd FileType markdown set expandtab
+autocmd FileType markdown set shiftwidth=2
+autocmd FileType markdown set tabstop=2
 " autocmd FileType markdown setlocal tw=60
 " autocmd FileType markdown setlocal fo=cqt
 
@@ -52,3 +55,10 @@ set relativenumber
 " rust racer autocompletion
 let g:racer_cmd = "/home/thiolliere/.cargo/bin/racer"
 let $RUST_SRC_PATH="/home/thiolliere/.multirust/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/"
+
+highlight Folded ctermbg=0 ctermfg=12
+
+" jedi
+let g:jedi#popup_on_dot = 0
+let g:jedi#popup_select_first = 0
+let g:jedi#show_call_signatures = "2"
